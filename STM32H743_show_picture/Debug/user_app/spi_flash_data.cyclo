@@ -1,0 +1,4 @@
+../user_app/spi_flash_data.c:24:6:spi_flash_write_picture	2
+../user_app/spi_flash_data.c:38:6:spi_flash_read_picture	2
+../user_app/spi_flash_data.c:51:6:test_spi_flash	9
+../user_app/spi_flash_data.c:142:6:test_picture_show	1
