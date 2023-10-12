@@ -214,6 +214,21 @@ void lcd_draw_circle(uint16_t x, uint16_t y, uint16_t r,uint16_t color)
 	    lcd_draw_point(x-xm,y-ym,color);
 	  }
 }
+
+//画实心圆函数
+/**
+ * @brief
+ * @param   x,y 圆心坐标 ,r 半径 ,color 颜色
+ * @return  none
+ */
+void lcd_draw_circle_fill(uint16_t x, uint16_t y, uint16_t r,uint16_t color)
+{
+	uint16_t i ;
+	for(i=1;i<r;i++)
+	{
+	 lcd_draw_circle(x,y,i,color);
+	}
+}
 /**
  * @breif	带颜色画矩形函数
  * @param   x1,y1 —— 矩形起始点
@@ -230,6 +245,27 @@ void LCD_Draw_Rect(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t 
 }
 
 
+/**
+ * @breif	读点函数
+ * @param   x,y —— 点坐标
+ * @retval	color  颜色
+ */
+uint16_t lcd_read_point(uint16_t x, uint16_t y)
+{
+    uint16_t *color;
+
+    if (x > LCD_WIDTH || y > LCD_HEIGHT) {
+        return 0xffff;
+    }
+
+    color = (uint16_t *)((uint32_t)LCD_FRAME_BUFFER+2*y*LCD_WIDTH+2*x);  //*2是因为DMA2D有两个图层
+
+    return *color;
+
+}
+
+
+
 void TFTLCD_test(void)
 {
 	uint16_t i,j;
@@ -238,128 +274,128 @@ void TFTLCD_test(void)
     //清屏
 	TFTLCD_clear(WHITE);
 
-	//用点画线
-	for(i=0;i<300;i++)
-	{
-		lcd_draw_point(512+i,300+i,RED);
-		HAL_Delay(1);
-		lcd_draw_point(512-i,300-i,RED);
-		HAL_Delay(1);
-		lcd_draw_point(512+i,300-i,RED);
-		HAL_Delay(1);
-		lcd_draw_point(512-i,300+i,RED);
-		HAL_Delay(1);
-
-	}
-	for(i=0;i<300;i++)
-	{
-		lcd_draw_point(512+i,300+i,WHITE);
-		HAL_Delay(1);
-		lcd_draw_point(512-i,300-i,WHITE);
-		HAL_Delay(1);
-		lcd_draw_point(512+i,300-i,WHITE);
-		HAL_Delay(1);
-		lcd_draw_point(512-i,300+i,WHITE);
-		HAL_Delay(1);
-	}
-	//画线
-	lcd_draw_line(512,300,1023,599,RED);
-	HAL_Delay(300);
-	lcd_draw_line(512,300,1023,0,RED);
-	HAL_Delay(300);
-	lcd_draw_line(512,300,0,0,RED);
-	HAL_Delay(300);
-	lcd_draw_line(512,300,0,599,RED);
-	HAL_Delay(300);
-	lcd_draw_line(512,300,0,599,WHITE);
-	HAL_Delay(300);
-	lcd_draw_line(512,300,0,0,WHITE);
-	HAL_Delay(300);
-	lcd_draw_line(512,300,1023,0,WHITE);
-	HAL_Delay(300);
-	lcd_draw_line(512,300,1023,599,WHITE);
-	HAL_Delay(300);
-
-	//画正弦波
-	for(i=0;i<512;i++)
-	{
-		lcd_draw_line(512+i,300+200*sin(alpha+i*0.035),512+i+1,300+200*sin(alpha+(i+1)*0.035),RED);
-		HAL_Delay(5);
-		lcd_draw_line(512-i,300+200*sin(alpha+i*0.035),512-i-1,300+200*sin(alpha+(i+1)*0.035),RED);
-		HAL_Delay(5);
-	}
-
-	for(i=0;i<512;i++)
-	{
-		lcd_draw_line(512+i,300+200*sin(alpha+i*0.035),512+i+1,300+200*sin(alpha+(i+1)*0.035),WHITE);
-		HAL_Delay(5);
-		lcd_draw_line(512-i,300+200*sin(alpha+i*0.035),512-i-1,300+200*sin(alpha+(i+1)*0.035),WHITE);
-		HAL_Delay(5);
-	}
-
-	for(j=0;j<250;j++)
-	{
-		for(i=0;i<512;i++)
-		{
-			lcd_draw_line(512+i,300+j*sin(alpha+i*0.035),512+i+1,300+j*sin(alpha+(i+1)*0.035),YELLOW);
-			user_delay_us(20);
-			lcd_draw_line(512-i,300+j*sin(alpha+i*0.035),512-i-1,300+j*sin(alpha+(i+1)*0.035),YELLOW);
-			user_delay_us(20);
-		}
-	}
-	for(j=0;j<250;j++)
-	{
-		for(i=0;i<512;i++)
-		{
-			lcd_draw_line(512+i,300+j*sin(alpha+i*0.035),512+i+1,300+j*sin(alpha+(i+1)*0.035),WHITE);
-			user_delay_us(20);
-			lcd_draw_line(512-i,300+j*sin(alpha+i*0.035),512-i-1,300+j*sin(alpha+(i+1)*0.035),WHITE);
-			user_delay_us(20);
-		}
-	}
-
-	//画圆
-	for(i=20;i<250;i++)
-	{
-	 lcd_draw_circle(512,300,i,RED);
-	 HAL_Delay(10);
-	}
-	for(i=20;i<250;i++)
-	{
-	 lcd_draw_circle(512,300,i,PINK);
-	 HAL_Delay(10);
-	}
-	for(i=20;i<250;i++)
-	{
-	 lcd_draw_circle(512,300,i,YELLOW);
-	 HAL_Delay(10);
-	}
-	for(i=20;i<250;i++)
-	{
-	 lcd_draw_circle(512,300,i,WHITE);
-	 HAL_Delay(10);
-	}
-	//画矩形
-	for(i=0;i<250;i++)
-	{
-		LCD_Draw_Rect(312+i,100+i,712-i,500-i,RED);
-		HAL_Delay(10);
-	}
-	for(i=0;i<250;i++)
-	{
-		LCD_Draw_Rect(312+i,100+i,712-i,500-i,GREEN);
-		HAL_Delay(10);
-	}
-	for(i=0;i<250;i++)
-	{
-		LCD_Draw_Rect(312+i,100+i,712-i,500-i,BLUE);
-		HAL_Delay(10);
-	}
-	for(i=0;i<250;i++)
-	{
-		LCD_Draw_Rect(312+i,100+i,712-i,500-i,WHITE);
-		HAL_Delay(10);
-	}
-	HAL_Delay(1000);
+//	//用点画线
+//	for(i=0;i<300;i++)
+//	{
+//		lcd_draw_point(512+i,300+i,RED);
+//		HAL_Delay(1);
+//		lcd_draw_point(512-i,300-i,RED);
+//		HAL_Delay(1);
+//		lcd_draw_point(512+i,300-i,RED);
+//		HAL_Delay(1);
+//		lcd_draw_point(512-i,300+i,RED);
+//		HAL_Delay(1);
+//
+//	}
+//	for(i=0;i<300;i++)
+//	{
+//		lcd_draw_point(512+i,300+i,WHITE);
+//		HAL_Delay(1);
+//		lcd_draw_point(512-i,300-i,WHITE);
+//		HAL_Delay(1);
+//		lcd_draw_point(512+i,300-i,WHITE);
+//		HAL_Delay(1);
+//		lcd_draw_point(512-i,300+i,WHITE);
+//		HAL_Delay(1);
+//	}
+//	//画线
+//	lcd_draw_line(512,300,1023,599,RED);
+//	HAL_Delay(300);
+//	lcd_draw_line(512,300,1023,0,RED);
+//	HAL_Delay(300);
+//	lcd_draw_line(512,300,0,0,RED);
+//	HAL_Delay(300);
+//	lcd_draw_line(512,300,0,599,RED);
+//	HAL_Delay(300);
+//	lcd_draw_line(512,300,0,599,WHITE);
+//	HAL_Delay(300);
+//	lcd_draw_line(512,300,0,0,WHITE);
+//	HAL_Delay(300);
+//	lcd_draw_line(512,300,1023,0,WHITE);
+//	HAL_Delay(300);
+//	lcd_draw_line(512,300,1023,599,WHITE);
+//	HAL_Delay(300);
+//
+//	//画正弦波
+//	for(i=0;i<512;i++)
+//	{
+//		lcd_draw_line(512+i,300+200*sin(alpha+i*0.035),512+i+1,300+200*sin(alpha+(i+1)*0.035),RED);
+//		HAL_Delay(5);
+//		lcd_draw_line(512-i,300+200*sin(alpha+i*0.035),512-i-1,300+200*sin(alpha+(i+1)*0.035),RED);
+//		HAL_Delay(5);
+//	}
+//
+//	for(i=0;i<512;i++)
+//	{
+//		lcd_draw_line(512+i,300+200*sin(alpha+i*0.035),512+i+1,300+200*sin(alpha+(i+1)*0.035),WHITE);
+//		HAL_Delay(5);
+//		lcd_draw_line(512-i,300+200*sin(alpha+i*0.035),512-i-1,300+200*sin(alpha+(i+1)*0.035),WHITE);
+//		HAL_Delay(5);
+//	}
+//
+//	for(j=0;j<250;j++)
+//	{
+//		for(i=0;i<512;i++)
+//		{
+//			lcd_draw_line(512+i,300+j*sin(alpha+i*0.035),512+i+1,300+j*sin(alpha+(i+1)*0.035),YELLOW);
+//			user_delay_us(20);
+//			lcd_draw_line(512-i,300+j*sin(alpha+i*0.035),512-i-1,300+j*sin(alpha+(i+1)*0.035),YELLOW);
+//			user_delay_us(20);
+//		}
+//	}
+//	for(j=0;j<250;j++)
+//	{
+//		for(i=0;i<512;i++)
+//		{
+//			lcd_draw_line(512+i,300+j*sin(alpha+i*0.035),512+i+1,300+j*sin(alpha+(i+1)*0.035),WHITE);
+//			user_delay_us(20);
+//			lcd_draw_line(512-i,300+j*sin(alpha+i*0.035),512-i-1,300+j*sin(alpha+(i+1)*0.035),WHITE);
+//			user_delay_us(20);
+//		}
+//	}
+//
+//	//画圆
+//	for(i=20;i<250;i++)
+//	{
+//	 lcd_draw_circle(512,300,i,RED);
+//	 HAL_Delay(10);
+//	}
+//	for(i=20;i<250;i++)
+//	{
+//	 lcd_draw_circle(512,300,i,PINK);
+//	 HAL_Delay(10);
+//	}
+//	for(i=20;i<250;i++)
+//	{
+//	 lcd_draw_circle(512,300,i,YELLOW);
+//	 HAL_Delay(10);
+//	}
+//	for(i=20;i<250;i++)
+//	{
+//	 lcd_draw_circle(512,300,i,WHITE);
+//	 HAL_Delay(10);
+//	}
+//	//画矩形
+//	for(i=0;i<250;i++)
+//	{
+//		LCD_Draw_Rect(312+i,100+i,712-i,500-i,RED);
+//		HAL_Delay(10);
+//	}
+//	for(i=0;i<250;i++)
+//	{
+//		LCD_Draw_Rect(312+i,100+i,712-i,500-i,GREEN);
+//		HAL_Delay(10);
+//	}
+//	for(i=0;i<250;i++)
+//	{
+//		LCD_Draw_Rect(312+i,100+i,712-i,500-i,BLUE);
+//		HAL_Delay(10);
+//	}
+//	for(i=0;i<250;i++)
+//	{
+//		LCD_Draw_Rect(312+i,100+i,712-i,500-i,WHITE);
+//		HAL_Delay(10);
+//	}
+//	HAL_Delay(1000);
 
 }

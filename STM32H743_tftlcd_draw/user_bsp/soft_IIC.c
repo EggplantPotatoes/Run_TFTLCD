@@ -10,21 +10,7 @@
 
 void soft_IIC_Init(void)
 {
-//    GPIO_InitTypeDef gpio_init_struct;
-//
-//    IIC_SCL_GPIO_CLK_ENABLE(); /* SCL引脚时钟使能 */
-//    IIC_SDA_GPIO_CLK_ENABLE(); /* SDA引脚时钟使能 */
-//
-//    gpio_init_struct.Pin = IIC_SCL_GPIO_PIN;
-//    gpio_init_struct.Mode = GPIO_MODE_OUTPUT_PP;         /* 推挽输出 */
-//    gpio_init_struct.Pull = GPIO_PULLUP;                 /* 上拉 */
-//    gpio_init_struct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;  /* 快速 */
-//    HAL_GPIO_Init(IIC_SCL_GPIO_PORT, &gpio_init_struct); /* SCL */
-//
-//    gpio_init_struct.Pin = IIC_SDA_GPIO_PIN;
-//    gpio_init_struct.Mode = GPIO_MODE_OUTPUT_OD;         /* 开漏输出 */
-//    HAL_GPIO_Init(IIC_SDA_GPIO_PORT, &gpio_init_struct); /* SDA */
-//    /* SDA引脚模式设置,开漏输出,上拉, 这样就不用再设置IO方向了, 开漏输出的时候(=1), 也可以读取外部信号的高低电平 */
+
 	user_delay_init(400);
     iic_stop(); /* 停止总线上所有设备 */
 }

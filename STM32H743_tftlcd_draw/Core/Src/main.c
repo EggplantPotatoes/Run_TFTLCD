@@ -28,6 +28,9 @@
 #include "QSPI_flash.h"
 #include "key_led.h"
 #include "spi_flash_data.h"
+#include "user_delay.h"
+#include "touch.h"
+#include "tft_lcd_draw.h"
 
 /* USER CODE END Includes */
 
@@ -135,7 +138,8 @@ int main(void)
 //  }
 
   W25QXX_Init();
-
+  touch_init();
+  TFTLCD_clear(WHITE);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -154,7 +158,9 @@ int main(void)
 //	  HAL_Delay(1000);
 //	  test_spi_flash();
 //	  test_picture_show();
-	  TFTLCD_test();
+//	  TFTLCD_test();
+//	  touch_test();
+	  tft_lcd_draw();
   }
   /* USER CODE END 3 */
 }

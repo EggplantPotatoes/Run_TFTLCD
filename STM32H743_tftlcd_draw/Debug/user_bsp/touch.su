@@ -1,1 +1,8 @@
-../user_bsp/touch.c:12:6:touch_init	8	static
+../user_bsp/touch.c:21:13:touch_hw_reset	40	static
+../user_bsp/touch.c:78:16:touch_write_reg	24	static
+../user_bsp/touch.c:118:13:touch_read_reg	32	static
+../user_bsp/touch.c:143:13:touch_sw_reset	16	static
+../user_bsp/touch.c:160:13:touch_get_pid	16	static
+../user_bsp/touch.c:170:6:touch_Scanf	16	static
+../user_bsp/touch.c:205:6:touch_init	16	static
+../user_bsp/touch.c:214:6:touch_test	8	static

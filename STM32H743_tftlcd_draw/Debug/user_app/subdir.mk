@@ -6,15 +6,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../user_app/TFTLCD.c \
-../user_app/spi_flash_data.c 
+../user_app/spi_flash_data.c \
+../user_app/tft_lcd_draw.c 
 
 OBJS += \
 ./user_app/TFTLCD.o \
-./user_app/spi_flash_data.o 
+./user_app/spi_flash_data.o \
+./user_app/tft_lcd_draw.o 
 
 C_DEPS += \
 ./user_app/TFTLCD.d \
-./user_app/spi_flash_data.d 
+./user_app/spi_flash_data.d \
+./user_app/tft_lcd_draw.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +27,7 @@ user_app/%.o user_app/%.su user_app/%.cyclo: ../user_app/%.c user_app/subdir.mk
 clean: clean-user_app
 
 clean-user_app:
-	-$(RM) ./user_app/TFTLCD.cyclo ./user_app/TFTLCD.d ./user_app/TFTLCD.o ./user_app/TFTLCD.su ./user_app/spi_flash_data.cyclo ./user_app/spi_flash_data.d ./user_app/spi_flash_data.o ./user_app/spi_flash_data.su
+	-$(RM) ./user_app/TFTLCD.cyclo ./user_app/TFTLCD.d ./user_app/TFTLCD.o ./user_app/TFTLCD.su ./user_app/spi_flash_data.cyclo ./user_app/spi_flash_data.d ./user_app/spi_flash_data.o ./user_app/spi_flash_data.su ./user_app/tft_lcd_draw.cyclo ./user_app/tft_lcd_draw.d ./user_app/tft_lcd_draw.o ./user_app/tft_lcd_draw.su
 
 .PHONY: clean-user_app
 

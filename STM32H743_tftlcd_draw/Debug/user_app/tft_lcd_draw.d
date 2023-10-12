@@ -1,4 +1,5 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
+user_app/tft_lcd_draw.o: ../user_app/tft_lcd_draw.c \
+ ../user_app/tft_lcd_draw.h ../Core/Inc/main.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -37,15 +38,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/sdram.h \
- F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/user_uart.h \
- F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_app/TFTLCD.h \
- F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/QSPI_flash.h \
- F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/key_led.h \
- F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_app/spi_flash_data.h \
- F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/user_delay.h \
  F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/touch.h \
- F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_app/tft_lcd_draw.h
+ ../user_app/TFTLCD.h \
+ F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/key_led.h
+../user_app/tft_lcd_draw.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -85,12 +81,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/sdram.h:
-F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/user_uart.h:
-F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_app/TFTLCD.h:
-F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/QSPI_flash.h:
-F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/key_led.h:
-F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_app/spi_flash_data.h:
-F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/user_delay.h:
 F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/touch.h:
-F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_app/tft_lcd_draw.h:
+../user_app/TFTLCD.h:
+F:/STM32_TFTLCD/my_code/STM32H743_show_picture/user_bsp/key_led.h:

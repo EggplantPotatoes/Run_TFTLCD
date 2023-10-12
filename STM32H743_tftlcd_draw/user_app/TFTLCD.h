@@ -37,6 +37,11 @@
 void test_tft_lcd(void);
 void test_lcd_show_picture(void);
 
+void TFTLCD_clear(uint16_t color);
+void lcd_draw_point(uint16_t x, uint16_t y, uint16_t color);
+void lcd_draw_circle(uint16_t x, uint16_t y, uint16_t r,uint16_t color);
+void lcd_draw_circle_fill(uint16_t x, uint16_t y, uint16_t r,uint16_t color);
+
 void TFTLCD_test(void);
 
 #endif /* TFTLCD_H_ */

@@ -39,6 +39,7 @@
 "./pictures/ceshitupian6.o"
 "./user_app/TFTLCD.o"
 "./user_app/spi_flash_data.o"
+"./user_app/tft_lcd_draw.o"
 "./user_bsp/QSPI_flash.o"
 "./user_bsp/key_led.o"
 "./user_bsp/sdram.o"
