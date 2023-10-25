@@ -1,3 +1,0 @@
-../user_bsp/sdram.c:21:12:SDRAM_SendCommand	48	static
-../user_bsp/sdram.c:46:6:SDRAM_Init	16	static
-../user_bsp/sdram.c:87:10:bsp_TestExtSDRAM	32	static
