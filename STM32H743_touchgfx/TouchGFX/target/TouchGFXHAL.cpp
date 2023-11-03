@@ -23,7 +23,10 @@
 #include <TouchGFXHAL.hpp>
 
 /* USER CODE BEGIN TouchGFXHAL.cpp */
-
+extern "C"
+{
+#include "qspi_flash.h"
+}
 using namespace touchgfx;
 
 void TouchGFXHAL::initialize()

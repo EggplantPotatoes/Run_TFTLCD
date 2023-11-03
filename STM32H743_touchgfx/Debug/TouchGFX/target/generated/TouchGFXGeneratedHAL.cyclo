@@ -21,19 +21,19 @@
 ../Drivers/CMSIS/Include/core_cm7.h:1940:22:void __NVIC_DisableIRQ(IRQn_Type)	2
 ../Drivers/CMSIS/Include/core_cm7.h:2032:22:void __NVIC_SetPriority(IRQn_Type, uint32_t)	2
 ../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:35:6:virtual void TouchGFXGeneratedHAL::initialize()	1
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:46:6:virtual void TouchGFXGeneratedHAL::configureInterrupts()	1
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:52:6:virtual void TouchGFXGeneratedHAL::enableInterrupts()	1
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:58:6:virtual void TouchGFXGeneratedHAL::disableInterrupts()	1
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:64:6:virtual void TouchGFXGeneratedHAL::enableLCDControllerInterrupt()	1
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:75:6:virtual bool TouchGFXGeneratedHAL::beginFrame()	1
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:80:6:virtual void TouchGFXGeneratedHAL::endFrame()	1
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:86:11:virtual uint16_t* TouchGFXGeneratedHAL::getTFTFrameBuffer() const	1
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:91:6:virtual void TouchGFXGeneratedHAL::setTFTFrameBuffer(uint16_t*)	1
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:99:6:virtual void TouchGFXGeneratedHAL::flushFrameBuffer(const touchgfx::Rect&)	1
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:104:6:virtual bool TouchGFXGeneratedHAL::blockCopy(void*, const void*, uint32_t)	1
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:109:10:virtual uint16_t TouchGFXGeneratedHAL::getTFTCurrentLine()	2
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:123:6:virtual void TouchGFXGeneratedHAL::InvalidateCache()	4
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:135:6:virtual void TouchGFXGeneratedHAL::FlushCache()	4
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:149:10:void HAL_LTDC_LineEventCallback(LTDC_HandleTypeDef*)	3
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:44:6:virtual void TouchGFXGeneratedHAL::configureInterrupts()	1
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:50:6:virtual void TouchGFXGeneratedHAL::enableInterrupts()	1
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:56:6:virtual void TouchGFXGeneratedHAL::disableInterrupts()	1
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:62:6:virtual void TouchGFXGeneratedHAL::enableLCDControllerInterrupt()	1
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:73:6:virtual bool TouchGFXGeneratedHAL::beginFrame()	1
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:78:6:virtual void TouchGFXGeneratedHAL::endFrame()	1
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:83:11:virtual uint16_t* TouchGFXGeneratedHAL::getTFTFrameBuffer() const	1
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:88:6:virtual void TouchGFXGeneratedHAL::setTFTFrameBuffer(uint16_t*)	1
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:96:6:virtual void TouchGFXGeneratedHAL::flushFrameBuffer(const touchgfx::Rect&)	1
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:101:6:virtual bool TouchGFXGeneratedHAL::blockCopy(void*, const void*, uint32_t)	1
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:106:10:virtual uint16_t TouchGFXGeneratedHAL::getTFTCurrentLine()	2
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:120:6:virtual void TouchGFXGeneratedHAL::InvalidateCache()	4
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:132:6:virtual void TouchGFXGeneratedHAL::FlushCache()	4
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp:146:10:void HAL_LTDC_LineEventCallback(LTDC_HandleTypeDef*)	3
 ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:30:7:TouchGFXGeneratedHAL::~TouchGFXGeneratedHAL()	1
 ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:30:7:virtual TouchGFXGeneratedHAL::~TouchGFXGeneratedHAL()	1

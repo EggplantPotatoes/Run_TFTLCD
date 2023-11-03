@@ -49,11 +49,34 @@ MEMORY
   RAM_D2 (xrw)   : ORIGIN = 0x30000000, LENGTH = 288K
   RAM_D3 (xrw)   : ORIGIN = 0x38000000, LENGTH = 64K
   ITCMRAM (xrw)  : ORIGIN = 0x00000000, LENGTH = 64K
+  QFLASH (rx)    : ORIGIN = 0x90000000, LENGTH = 32768K
+  SRAM (xrw)     : ORIGIN = 0xc0000000, LENGTH = 32768K
 }
 
 /* Define output sections */
 SECTIONS
 {
+	  /*lcd ?? 2MB 2048K */
+	  .sram_data1 0xc0000000 (NOLOAD): 
+	 {
+	    . = ALIGN(4);
+	    *(.sram_data1)
+	    . = ALIGN(4);
+	 } > SRAM
+    .sram_data2 0xc0300000 (NOLOAD): 
+	 {
+	    . = ALIGN(4);
+	    *(.sram_data2)
+	    . = ALIGN(4);
+	 } > SRAM
+	 
+	 ExtFlashSection :
+	 {
+	   *(ExtFlashSection ExtFlashSection.*)
+	   . = ALIGN(4);
+	  } >QFLASH 
+	 
+  
   /* The startup code goes first into FLASH */
   .isr_vector :
   {
@@ -169,6 +192,8 @@ SECTIONS
     libm.a ( * )
     libgcc.a ( * )
   }
+
+
 
   .ARM.attributes 0 : { *(.ARM.attributes) }
 }

@@ -39,6 +39,7 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:36:7:virtual touchgfx::Widget::~Widget()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:33:5:touchgfx::Box::Box()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:62:10:void touchgfx::Box::setColor(touchgfx::colortype)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:36:5:touchgfx::AbstractButton::AbstractButton()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:63:10:void touchgfx::AbstractButton::setAction(touchgfx::GenericCallback<const touchgfx::AbstractButton&>&)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:32:7:touchgfx::AbstractButton::~AbstractButton()	1
@@ -49,15 +50,14 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:43:5:touchgfx::TextArea::TextArea()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:429:9:touchgfx::TextArea::BoundingArea::BoundingArea()	1
-../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/screen1ViewBase.hpp:24:18:virtual void screen1ViewBase::action1()	1
-../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/screen1ViewBase.hpp:31:26:FrontendApplication& screen1ViewBase::application()	1
+../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/screen1ViewBase.hpp:23:26:FrontendApplication& screen1ViewBase::application()	1
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<screen1Presenter>::~View()	1
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<screen1Presenter>::~View()	1
 ../TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.cpp:9:1:screen1ViewBase::screen1ViewBase()	1
-../TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.cpp:28:1:screen1ViewBase::~screen1ViewBase()	1
-../TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.cpp:28:1:virtual screen1ViewBase::~screen1ViewBase()	1
-../TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.cpp:33:6:virtual void screen1ViewBase::setupScreen()	1
-../TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.cpp:38:6:void screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	2
+../TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.cpp:32:1:screen1ViewBase::~screen1ViewBase()	1
+../TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.cpp:32:1:virtual screen1ViewBase::~screen1ViewBase()	1
+../TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.cpp:37:6:virtual void screen1ViewBase::setupScreen()	1
+../TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.cpp:42:6:void screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	2
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:39:5:touchgfx::View<T>::View() [with T = screen1Presenter]	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:134:7:constexpr touchgfx::GenericCallback<const touchgfx::AbstractButton&>::GenericCallback()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:373:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = screen1ViewBase; T1 = const touchgfx::AbstractButton&]	1
@@ -69,6 +69,8 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:40:7:virtual touchgfx::Container::~Container()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:29:7:touchgfx::Box::~Box()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:29:7:virtual touchgfx::Box::~Box()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:38:7:touchgfx::Image::~Image()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:38:7:virtual touchgfx::Image::~Image()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:31:7:touchgfx::Button::~Button()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:31:7:virtual touchgfx::Button::~Button()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:40:7:touchgfx::TextArea::~TextArea()	1

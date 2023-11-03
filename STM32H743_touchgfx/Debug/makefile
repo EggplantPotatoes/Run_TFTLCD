@@ -10,8 +10,6 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include user_bsp/subdir.mk
--include user_app/subdir.mk
--include pictures/subdir.mk
 -include TouchGFX/target/generated/subdir.mk
 -include TouchGFX/target/subdir.mk
 -include TouchGFX/gui/src/screen2_screen/subdir.mk
@@ -28,7 +26,7 @@ RM := rm -rf
 -include TouchGFX/build/MINGW32_NT-6.2/touchgfx/framework/source/platform/hal/simulator/sdl2/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/touchgfx/framework/source/platform/driver/touch/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/simulator/subdir.mk
--include TouchGFX/build/MINGW32_NT-6.2/gui/src/screen_screen/subdir.mk
+-include TouchGFX/build/MINGW32_NT-6.2/gui/src/screen2_screen/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/gui/src/screen1_screen/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/gui/src/model/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/gui/src/common/subdir.mk
@@ -36,20 +34,16 @@ RM := rm -rf
 -include TouchGFX/build/MINGW32_NT-6.2/generated/simulator/src/video/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/generated/simulator/src/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/generated/images/src/__generated/subdir.mk
--include TouchGFX/build/MINGW32_NT-6.2/generated/images/src/Settings/subdir.mk
--include TouchGFX/build/MINGW32_NT-6.2/generated/images/src/HomeAutomation/login/subdir.mk
--include TouchGFX/build/MINGW32_NT-6.2/generated/images/src/HomeAutomation/subdir.mk
--include TouchGFX/build/MINGW32_NT-6.2/generated/images/src/Game2D/subdir.mk
--include TouchGFX/build/MINGW32_NT-6.2/generated/images/src/Game2048/subdir.mk
--include TouchGFX/build/MINGW32_NT-6.2/generated/images/src/Controls/subdir.mk
--include TouchGFX/build/MINGW32_NT-6.2/generated/images/src/CarouselMenu/subdir.mk
--include TouchGFX/build/MINGW32_NT-6.2/generated/images/src/AnimatingButtonsMenu/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/generated/images/src/subdir.mk
--include TouchGFX/build/MINGW32_NT-6.2/generated/gui_generated/src/screen_screen/subdir.mk
+-include TouchGFX/build/MINGW32_NT-6.2/generated/gui_generated/src/screen2_screen/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/generated/gui_generated/src/screen1_screen/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/generated/gui_generated/src/common/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/generated/fonts/src/subdir.mk
 -include TouchGFX/App/subdir.mk
+-include Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/subdir.mk
+-include Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/subdir.mk
+-include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/subdir.mk
+-include Middlewares/Third_Party/FreeRTOS/Source/subdir.mk
 -include Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -90,34 +84,35 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := touchgfx
+BUILD_ARTIFACT_NAME := touchgfx_config
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-touchgfx.elf \
+touchgfx_config.elf \
 
 MAP_FILES += \
-touchgfx.map \
+touchgfx_config.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-touchgfx.list \
+touchgfx_config.list \
 
 
 # All Target
-all: main-build
+all:
+	+@$(MAKE) --no-print-directory main-build && $(MAKE) --no-print-directory post-build
 
 # Main-build Target
-main-build: touchgfx.elf secondary-outputs
+main-build: touchgfx_config.elf secondary-outputs
 
 # Tool invocations
-touchgfx.elf touchgfx.map: $(OBJS) $(USER_OBJS) F:\STM32_TFTLCD\my_code\STM32H743_touchgfx\STM32H743IITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "touchgfx.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"F:\STM32_TFTLCD\my_code\STM32H743_touchgfx\STM32H743IITX_FLASH.ld" -Wl,-Map="touchgfx.map" -Wl,--gc-sections -static -L"F:\STM32_TFTLCD\my_code\STM32H743_touchgfx\Middlewares\ST\touchgfx\lib\core\cortex_m7\gcc" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+touchgfx_config.elf touchgfx_config.map: $(OBJS) $(USER_OBJS) F:\STM32_TFTLCD\my_code\TouchGFX_MemoryMapped\STM32H743IITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "touchgfx_config.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"F:\STM32_TFTLCD\my_code\TouchGFX_MemoryMapped\STM32H743IITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="touchgfx_config.map" -Wl,--gc-sections -static -L"F:\STM32_TFTLCD\my_code\TouchGFX_MemoryMapped\Middlewares\ST\touchgfx\lib\core\cortex_m7\gcc" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -126,14 +121,18 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-touchgfx.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "touchgfx.list"
+touchgfx_config.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "touchgfx_config.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) default.size.stdout touchgfx.elf touchgfx.list touchgfx.map
+	-$(RM) default.size.stdout touchgfx_config.elf touchgfx_config.list touchgfx_config.map
+	-@echo ' '
+
+post-build:
+	arm-none-eabi-objcopy.exe -O binary -j ExtFlashSection "touchgfx_config.elf" "QSPI_Flash.bin"
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
@@ -145,6 +144,6 @@ fail-specified-linker-script-missing:
 warn-no-linker-script-specified:
 	@echo 'Warning: No linker script specified. Check the linker settings in the build configuration.'
 
-.PHONY: all clean dependents main-build fail-specified-linker-script-missing warn-no-linker-script-specified
+.PHONY: all clean dependents main-build fail-specified-linker-script-missing warn-no-linker-script-specified post-build
 
 -include ../makefile.targets

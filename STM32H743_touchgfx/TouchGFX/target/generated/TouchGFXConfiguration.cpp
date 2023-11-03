@@ -65,14 +65,12 @@ void touchgfx_components_init()
 void touchgfx_taskEntry()
 {
     /*
-     * Main event loop will check for VSYNC signal, and then process next frame.
+     * Main event loop. Will wait for VSYNC signal, and then process next frame. Call
+     * this function from your GUI task.
      *
-     * Note This function returns immediately if there is no VSYNC signal.
+     * Note This function never returns
      */
-     if (OSWrappers::isVSyncAvailable())
-     {
-         hal.backPorchExited();
-     }
+    hal.taskEntry();
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -1,7 +1,7 @@
 
 {
   "Application": {
-    "Name": "touchgfx",
+    "Name": "touchgfx_config",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "AvailableColorDepths": [ 16 ],
     "AvailableLCDs":
@@ -19,7 +19,7 @@
     "SubFamily": "STM32H743/753",
     "Platform": "m7",
     "Toolchain": "STM32CubeIDE",
-    "ProjectFile": "../touchgfx.ioc",
+    "ProjectFile": "../touchgfx_config.ioc",
     "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
     "OptionalComponents": [
     ],

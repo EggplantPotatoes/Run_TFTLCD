@@ -1,4 +1,2 @@
-../user_bsp/user_delay.c:16:6:user_delay_init	1
-../user_bsp/user_delay.c:30:6:user_delay_us	4
-../user_bsp/user_delay.c:64:6:user_delay_ms	3
-../user_bsp/user_delay.c:106:6:HAL_Delay	1
+../user_bsp/user_delay.c:10:6:user_delay_us	2
+../user_bsp/user_delay.c:20:6:user_delay_ms	2

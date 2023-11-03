@@ -41,7 +41,7 @@ void STM32TouchController::init()
 bool STM32TouchController::sampleTouch(int32_t& x, int32_t& y)
 {
 	touch_Scanf();
-	if(User_Touch.state) //有触摸，并读出数据
+	if(User_Touch.state) //有触摸，并读出数�?
 	{
 		x = User_Touch.point[0].x;
 		y = User_Touch.point[0].y;

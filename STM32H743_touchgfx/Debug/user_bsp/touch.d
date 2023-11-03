@@ -39,7 +39,7 @@ user_bsp/touch.o: ../user_bsp/touch.c ../user_bsp/touch.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- ../user_bsp/soft_IIC.h
+ ../user_bsp/soft_IIC.h ../user_bsp/user_delay.h
 ../user_bsp/touch.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
@@ -83,3 +83,4 @@ user_bsp/touch.o: ../user_bsp/touch.c ../user_bsp/touch.h \
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
 ../user_bsp/soft_IIC.h:
+../user_bsp/user_delay.h:

@@ -8,6 +8,7 @@
 #include <mvp/View.hpp>
 #include <gui/screen1_screen/screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 
@@ -18,15 +19,6 @@ public:
     virtual ~screen1ViewBase();
     virtual void setupScreen();
 
-    /*
-     * Custom Actions
-     */
-    virtual void action1()
-    {
-        // Override and implement this function in Screen1
-    }
-    
-
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());
@@ -36,6 +28,7 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
+    touchgfx::Image image1;
     touchgfx::Button button1;
     touchgfx::TextArea textArea1;
 

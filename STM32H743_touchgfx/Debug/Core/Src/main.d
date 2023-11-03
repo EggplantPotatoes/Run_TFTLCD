@@ -39,16 +39,32 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+ ../Core/Inc/FreeRTOSConfig.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+ ../Core/Inc/crc.h ../Core/Inc/main.h ../Core/Inc/dma2d.h \
+ ../Core/Inc/ltdc.h ../Core/Inc/quadspi.h ../Core/Inc/tim.h \
+ ../Core/Inc/usart.h ../Core/Inc/gpio.h ../Core/Inc/fmc.h \
  ../TouchGFX/App/app_touchgfx.h \
- F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/sdram.h \
- F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/user_uart.h \
- F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_app/TFTLCD.h \
- F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/QSPI_flash.h \
- F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/key_led.h \
- F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_app/spi_flash_data.h \
- F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/user_delay.h \
- F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/touch.h \
- F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_app/tft_lcd_draw.h
+ F:/STM32_TFTLCD/my_code/TouchGFX_MemoryMapped/user_bsp/sdram.h \
+ F:/STM32_TFTLCD/my_code/TouchGFX_MemoryMapped/user_bsp/user_uart.h \
+ F:/STM32_TFTLCD/my_code/TouchGFX_MemoryMapped/user_bsp/key_led.h \
+ F:/STM32_TFTLCD/my_code/TouchGFX_MemoryMapped/user_bsp/user_delay.h \
+ F:/STM32_TFTLCD/my_code/TouchGFX_MemoryMapped/user_bsp/touch.h
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -90,13 +106,35 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
+../Core/Inc/FreeRTOSConfig.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
+../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
+../Core/Inc/crc.h:
+../Core/Inc/main.h:
+../Core/Inc/dma2d.h:
+../Core/Inc/ltdc.h:
+../Core/Inc/quadspi.h:
+../Core/Inc/tim.h:
+../Core/Inc/usart.h:
+../Core/Inc/gpio.h:
+../Core/Inc/fmc.h:
 ../TouchGFX/App/app_touchgfx.h:
-F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/sdram.h:
-F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/user_uart.h:
-F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_app/TFTLCD.h:
-F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/QSPI_flash.h:
-F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/key_led.h:
-F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_app/spi_flash_data.h:
-F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/user_delay.h:
-F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/touch.h:
-F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_app/tft_lcd_draw.h:
+F:/STM32_TFTLCD/my_code/TouchGFX_MemoryMapped/user_bsp/sdram.h:
+F:/STM32_TFTLCD/my_code/TouchGFX_MemoryMapped/user_bsp/user_uart.h:
+F:/STM32_TFTLCD/my_code/TouchGFX_MemoryMapped/user_bsp/key_led.h:
+F:/STM32_TFTLCD/my_code/TouchGFX_MemoryMapped/user_bsp/user_delay.h:
+F:/STM32_TFTLCD/my_code/TouchGFX_MemoryMapped/user_bsp/touch.h:

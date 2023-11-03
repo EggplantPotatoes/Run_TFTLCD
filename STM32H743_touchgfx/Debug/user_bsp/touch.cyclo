@@ -1,8 +1,8 @@
-../user_bsp/touch.c:21:13:touch_hw_reset	3
-../user_bsp/touch.c:78:16:touch_write_reg	4
-../user_bsp/touch.c:118:13:touch_read_reg	2
-../user_bsp/touch.c:143:13:touch_sw_reset	1
-../user_bsp/touch.c:160:13:touch_get_pid	1
-../user_bsp/touch.c:170:6:touch_Scanf	4
-../user_bsp/touch.c:205:6:touch_init	1
-../user_bsp/touch.c:214:6:touch_test	1
+../user_bsp/touch.c:22:13:touch_hw_reset	3
+../user_bsp/touch.c:79:16:touch_write_reg	4
+../user_bsp/touch.c:119:13:touch_read_reg	2
+../user_bsp/touch.c:144:13:touch_sw_reset	1
+../user_bsp/touch.c:161:13:touch_get_pid	1
+../user_bsp/touch.c:171:6:touch_Scanf	3
+../user_bsp/touch.c:206:6:touch_init	1
+../user_bsp/touch.c:215:6:touch_test	1

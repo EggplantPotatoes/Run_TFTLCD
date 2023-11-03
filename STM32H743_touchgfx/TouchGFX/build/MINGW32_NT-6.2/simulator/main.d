@@ -66,19 +66,18 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp \
  gui/include/gui/model/Model.hpp \
- gui/include/gui/screen_screen/screenView.hpp \
- generated/gui_generated/include/gui_generated/screen_screen/screenViewBase.hpp \
+ gui/include/gui/screen1_screen/screen1View.hpp \
+ generated/gui_generated/include/gui_generated/screen1_screen/screen1ViewBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- gui/include/gui/screen_screen/screenPresenter.hpp \
+ gui/include/gui/screen1_screen/screen1Presenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- gui/include/gui/screen1_screen/Screen1View.hpp \
- generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
- gui/include/gui/screen1_screen/Screen1Presenter.hpp \
+ gui/include/gui/screen2_screen/Screen2View.hpp \
+ generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp \
+ gui/include/gui/screen2_screen/Screen2Presenter.hpp \
  generated/gui_generated/include/gui_generated/common/SimConstants.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/SDL2TouchController.hpp \
  generated/simulator/include/simulator/mainBase.hpp
@@ -217,19 +216,17 @@ generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp
 
 gui/include/gui/model/Model.hpp:
 
-gui/include/gui/screen_screen/screenView.hpp:
+gui/include/gui/screen1_screen/screen1View.hpp:
 
-generated/gui_generated/include/gui_generated/screen_screen/screenViewBase.hpp:
+generated/gui_generated/include/gui_generated/screen1_screen/screen1ViewBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-gui/include/gui/screen_screen/screenPresenter.hpp:
+gui/include/gui/screen1_screen/screen1Presenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
@@ -237,11 +234,11 @@ gui/include/gui/model/ModelListener.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
-gui/include/gui/screen1_screen/Screen1View.hpp:
+gui/include/gui/screen2_screen/Screen2View.hpp:
 
-generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
+generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:
 
-gui/include/gui/screen1_screen/Screen1Presenter.hpp:
+gui/include/gui/screen2_screen/Screen2Presenter.hpp:
 
 generated/gui_generated/include/gui_generated/common/SimConstants.hpp:
 

@@ -38,9 +38,7 @@ void TouchGFXGeneratedHAL::initialize()
     registerEventListener(*(Application::getInstance()));
     registerTaskDelayFunction(&OSWrappers::taskDelay);
     setFrameRefreshStrategy(HAL::REFRESH_STRATEGY_OPTIM_SINGLE_BUFFER_TFT_CTRL);
-    enableLCDControllerInterrupt();
-    enableInterrupts();
-    setFrameBufferStartAddresses((void*)0xc0100000, (void*)0, (void*)0);
+    setFrameBufferStartAddresses((void*)0xC0000000, (void*)0, (void*)0);
 }
 
 void TouchGFXGeneratedHAL::configureInterrupts()
@@ -80,7 +78,6 @@ bool TouchGFXGeneratedHAL::beginFrame()
 void TouchGFXGeneratedHAL::endFrame()
 {
     HAL::endFrame();
-    touchgfx::OSWrappers::signalRenderingDone();
 }
 
 uint16_t* TouchGFXGeneratedHAL::getTFTFrameBuffer() const

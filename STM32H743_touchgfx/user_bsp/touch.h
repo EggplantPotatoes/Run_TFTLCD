@@ -64,6 +64,5 @@ extern Touch_Struct	User_Touch;
 
 //void touch_Scanf(void);
 //void touch_init(void);
-
 void touch_test(void);
 #endif /* TOUCH_H_ */

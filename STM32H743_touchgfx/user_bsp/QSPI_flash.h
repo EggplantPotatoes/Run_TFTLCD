@@ -1,14 +1,13 @@
 /*
- * QSPI_flash.h
+ * qspi_flash.h
  *
- *  Created on: Sep 23, 2023
+ *  Created on: Nov 2, 2023
  *      Author: smile
  */
 
 #ifndef QSPI_FLASH_H_
 #define QSPI_FLASH_H_
 #include "main.h"
-
 #define W25Q80 	0XEF13
 #define W25Q16 	0XEF14
 #define W25Q32 	0XEF15
@@ -61,5 +60,6 @@ void W25QXX_Erase_Chip(void);    	  	//整片擦除
 void W25QXX_Erase_Sector(uint32_t Dst_Addr);	//扇区擦除
 void W25QXX_Wait_Busy(void);           	//等待空闲
 
+void w25qxx_flash_init(void);
 
 #endif /* QSPI_FLASH_H_ */

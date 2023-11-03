@@ -4,7 +4,7 @@ TouchGFX/target/STM32TouchController.o: \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp \
- F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/touch.h \
+ F:/STM32_TFTLCD/my_code/TouchGFX_MemoryMapped/user_bsp/touch.h \
  ../Core/Inc/main.h ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -49,7 +49,7 @@ TouchGFX/target/STM32TouchController.o: \
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp:
-F:/STM32_TFTLCD/my_code/STM32H743_touchgfx/user_bsp/touch.h:
+F:/STM32_TFTLCD/my_code/TouchGFX_MemoryMapped/user_bsp/touch.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:

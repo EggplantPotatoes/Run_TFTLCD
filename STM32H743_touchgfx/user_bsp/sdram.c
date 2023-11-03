@@ -1,10 +1,10 @@
 /*
  * sdram.c
  *
- *  Created on: Sep 14, 2023
+ *  Created on: Nov 2, 2023
  *      Author: smile
  */
-/* USER CODE BEGIN 0 */
+
 #include "sdram.h"
 
 extern SDRAM_HandleTypeDef hsdram1;
@@ -51,7 +51,7 @@ void SDRAM_Init(void)
     SDRAM_SendCommand(FMC_SDRAM_CMD_CLK_ENABLE, 1, 1, 0);
 
     /* 2. 延时，至少100us */
-    HAL_Delay(1);
+//    HAL_Delay(1);
 
     /* 3. SDRAM全部预充电命令 */
     SDRAM_SendCommand(FMC_SDRAM_CMD_PALL, 1, 1, 0);

@@ -8,6 +8,7 @@
 
 #include "touch.h"
 #include "soft_IIC.h"
+#include "user_delay.h"
 
 uint8_t touch_iic_addr;
 //touch_point_t touch_point[1];
@@ -37,18 +38,18 @@ static void touch_hw_reset(uint8_t addr)
              HAL_GPIO_WritePin(TP_CS_GPIO_Port, TP_CS_Pin, GPIO_PIN_RESET);
              HAL_GPIO_WritePin(TP_PEN_GPIO_Port, TP_PEN_Pin, GPIO_PIN_RESET);
              HAL_GPIO_WritePin(TP_PEN_GPIO_Port, TP_PEN_Pin, GPIO_PIN_SET);
-             HAL_Delay(1);
+             user_delay_ms(1);
              HAL_GPIO_WritePin(TP_CS_GPIO_Port, TP_CS_Pin, GPIO_PIN_SET);
-             HAL_Delay(10);
+             user_delay_ms(10);
             break;
         }
         case 0xBA:
         {
             HAL_GPIO_WritePin(TP_CS_GPIO_Port, TP_CS_Pin, GPIO_PIN_RESET);
             HAL_GPIO_WritePin(TP_PEN_GPIO_Port, TP_PEN_Pin, GPIO_PIN_RESET);
-            HAL_Delay(1);
+            user_delay_ms(1);
             HAL_GPIO_WritePin(TP_CS_GPIO_Port, TP_CS_Pin, GPIO_PIN_SET);
-            HAL_Delay(10);
+            user_delay_ms(10);
             break;
        }
         default:
@@ -64,7 +65,7 @@ static void touch_hw_reset(uint8_t addr)
     HAL_GPIO_Init(TP_PEN_GPIO_Port, &gpio_init_struct);
 
     touch_iic_addr = addr>>1;
-    HAL_Delay(100);
+    user_delay_ms(100);
 }
 
 /**
@@ -146,7 +147,7 @@ static void touch_sw_reset(void)
 
     dat = 0x02;
     touch_write_reg(REG_CTRL, &dat, 1);
-    HAL_Delay(10);
+    user_delay_ms(10);
 
     dat = 0x00;
     touch_write_reg(REG_CTRL, &dat, 1);
@@ -169,17 +170,17 @@ static void touch_get_pid(char *pid)
 */
 void touch_Scanf(void)
 {
-	static uint8_t timer=0;
+//	static uint8_t timer=0;
 	uint8_t i=0;
 	uint8_t _temp;	//中间变量
 	uint8_t data_temp[6];	//中间变量
 
-	timer++;
-	if(timer<10) //坐标信息10ms刷新周期
-	{
-		return;
-	}
-	timer=0;
+//	timer++;
+//	if(timer<10) //坐标信息10ms刷新周期
+//	{
+//		return;
+//	}
+//	timer=0;
 
 	touch_read_reg(REG_TPINFO, &_temp, 1);
 

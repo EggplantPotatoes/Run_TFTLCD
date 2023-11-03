@@ -13,15 +13,19 @@ screen1ViewBase::screen1ViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    button1.setXY(451, 495);
-    button1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUND_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUND_PRESSED_ID));
+    image1.setXY(0, 0);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_GLASS_THEME_IMAGES_BACKGROUNDS_1024X600_GRADIENT_FIRE_ID));
+    add(image1);
+
+    button1.setXY(392, 409);
+    button1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_SMALL_ROUND_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_SMALL_ROUND_PRESSED_ID));
     button1.setAction(buttonCallback);
     add(button1);
 
-    textArea1.setXY(375, 137);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 252, 252));
+    textArea1.setXY(385, 179);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(250, 250, 250));
     textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T_DEMO));
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_KRIU));
     add(textArea1);
 }
 

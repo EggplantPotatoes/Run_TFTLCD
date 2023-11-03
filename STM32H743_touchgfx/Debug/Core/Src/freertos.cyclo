@@ -1,1 +1,4 @@
-../Core/Src/freertos.c:62:6:vApplicationGetIdleTaskMemory	1
+../Core/Src/freertos.c:70:6:vApplicationGetIdleTaskMemory	1
+../Core/Src/freertos.c:84:6:MX_FREERTOS_Init	1
+../Core/Src/freertos.c:127:6:StartDefaultTask	1
+../Core/Src/freertos.c:149:6:touchgfx_task	1

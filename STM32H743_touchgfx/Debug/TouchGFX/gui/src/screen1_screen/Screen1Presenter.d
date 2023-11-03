@@ -43,6 +43,7 @@ TouchGFX/gui/src/screen1_screen/screen1Presenter.o: \
  ../TouchGFX/gui/include/gui/screen1_screen/screen1Presenter.hpp \
  ../TouchGFX/gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
@@ -91,6 +92,7 @@ TouchGFX/gui/src/screen1_screen/screen1Presenter.o: \
 ../TouchGFX/gui/include/gui/screen1_screen/screen1Presenter.hpp:
 ../TouchGFX/gui/include/gui/model/ModelListener.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:

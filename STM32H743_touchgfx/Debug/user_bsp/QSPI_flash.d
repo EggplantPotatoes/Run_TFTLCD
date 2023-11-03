@@ -1,4 +1,4 @@
-user_bsp/QSPI_flash.o: ../user_bsp/QSPI_flash.c ../user_bsp/QSPI_flash.h \
+user_bsp/qspi_flash.o: ../user_bsp/qspi_flash.c ../user_bsp/qspi_flash.h \
  ../Core/Inc/main.h ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -38,8 +38,9 @@ user_bsp/QSPI_flash.o: ../user_bsp/QSPI_flash.c ../user_bsp/QSPI_flash.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
- ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
-../user_bsp/QSPI_flash.h:
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
+ ../user_bsp/user_delay.h
+../user_bsp/qspi_flash.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -81,3 +82,4 @@ user_bsp/QSPI_flash.o: ../user_bsp/QSPI_flash.c ../user_bsp/QSPI_flash.h \
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
+../user_bsp/user_delay.h:
