@@ -1,6 +1,6 @@
-TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.o: \
- ../TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.cpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/screen1ViewBase.hpp \
+TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.o: \
+ ../TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
  ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -39,19 +39,15 @@ TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  ../TouchGFX/gui/include/gui/model/Model.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- ../TouchGFX/gui/include/gui/screen1_screen/screen1Presenter.hpp \
+ ../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp \
  ../TouchGFX/gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
- ../TouchGFX/generated/images/include/images/BitmapDatabase.hpp \
- ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
-../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/screen1ViewBase.hpp:
+ ../TouchGFX/generated/images/include/images/BitmapDatabase.hpp
+../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
 ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:
@@ -90,15 +86,11 @@ TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
 ../TouchGFX/gui/include/gui/model/Model.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
-../TouchGFX/gui/include/gui/screen1_screen/screen1Presenter.hpp:
+../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp:
 ../TouchGFX/gui/include/gui/model/ModelListener.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
 ../TouchGFX/generated/images/include/images/BitmapDatabase.hpp:
-../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:

@@ -1,14 +1,14 @@
 #ifndef SCREEN1VIEW_HPP
 #define SCREEN1VIEW_HPP
 
-#include <gui_generated/screen1_screen/screen1ViewBase.hpp>
-#include <gui/screen1_screen/screen1Presenter.hpp>
+#include <gui_generated/screen1_screen/Screen1ViewBase.hpp>
+#include <gui/screen1_screen/Screen1Presenter.hpp>
 
-class screen1View : public screen1ViewBase
+class Screen1View : public Screen1ViewBase
 {
 public:
-    screen1View();
-    virtual ~screen1View() {}
+    Screen1View();
+    virtual ~Screen1View() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
 protected:

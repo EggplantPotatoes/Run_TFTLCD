@@ -1,16 +1,16 @@
-#include <gui/screen1_screen/screen1View.hpp>
+#include <gui/screen1_screen/Screen1View.hpp>
 
-screen1View::screen1View()
+Screen1View::Screen1View()
 {
 
 }
 
-void screen1View::setupScreen()
+void Screen1View::setupScreen()
 {
-    screen1ViewBase::setupScreen();
+    Screen1ViewBase::setupScreen();
 }
 
-void screen1View::tearDownScreen()
+void Screen1View::tearDownScreen()
 {
-    screen1ViewBase::tearDownScreen();
+    Screen1ViewBase::tearDownScreen();
 }

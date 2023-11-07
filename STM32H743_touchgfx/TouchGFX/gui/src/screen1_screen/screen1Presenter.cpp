@@ -1,18 +1,18 @@
-#include <gui/screen1_screen/screen1View.hpp>
-#include <gui/screen1_screen/screen1Presenter.hpp>
+#include <gui/screen1_screen/Screen1View.hpp>
+#include <gui/screen1_screen/Screen1Presenter.hpp>
 
-screen1Presenter::screen1Presenter(screen1View& v)
+Screen1Presenter::Screen1Presenter(Screen1View& v)
     : view(v)
 {
 
 }
 
-void screen1Presenter::activate()
+void Screen1Presenter::activate()
 {
 
 }
 
-void screen1Presenter::deactivate()
+void Screen1Presenter::deactivate()
 {
 
 }

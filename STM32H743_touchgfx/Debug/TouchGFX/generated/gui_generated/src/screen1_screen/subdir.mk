@@ -5,13 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.cpp 
+../TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp 
 
 OBJS += \
-./TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.o 
+./TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.o 
 
 CPP_DEPS += \
-./TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.d 
+./TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -21,7 +21,7 @@ TouchGFX/generated/gui_generated/src/screen1_screen/%.o TouchGFX/generated/gui_g
 clean: clean-TouchGFX-2f-generated-2f-gui_generated-2f-src-2f-screen1_screen
 
 clean-TouchGFX-2f-generated-2f-gui_generated-2f-src-2f-screen1_screen:
-	-$(RM) ./TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.cyclo ./TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.d ./TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.o ./TouchGFX/generated/gui_generated/src/screen1_screen/screen1ViewBase.su
+	-$(RM) ./TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cyclo ./TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.d ./TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.o ./TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.su
 
 .PHONY: clean-TouchGFX-2f-generated-2f-gui_generated-2f-src-2f-screen1_screen
 

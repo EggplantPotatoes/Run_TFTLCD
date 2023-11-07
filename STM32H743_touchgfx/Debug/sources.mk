@@ -44,7 +44,16 @@ TouchGFX/build/MINGW32_NT-6.2/generated/fonts/src \
 TouchGFX/build/MINGW32_NT-6.2/generated/gui_generated/src/common \
 TouchGFX/build/MINGW32_NT-6.2/generated/gui_generated/src/screen1_screen \
 TouchGFX/build/MINGW32_NT-6.2/generated/gui_generated/src/screen2_screen \
+TouchGFX/build/MINGW32_NT-6.2/generated/gui_generated/src/screen_screen \
+TouchGFX/build/MINGW32_NT-6.2/generated/images/src/AnimatingButtonsMenu \
 TouchGFX/build/MINGW32_NT-6.2/generated/images/src \
+TouchGFX/build/MINGW32_NT-6.2/generated/images/src/CarouselMenu \
+TouchGFX/build/MINGW32_NT-6.2/generated/images/src/Controls \
+TouchGFX/build/MINGW32_NT-6.2/generated/images/src/Game2048 \
+TouchGFX/build/MINGW32_NT-6.2/generated/images/src/Game2D \
+TouchGFX/build/MINGW32_NT-6.2/generated/images/src/HomeAutomation \
+TouchGFX/build/MINGW32_NT-6.2/generated/images/src/HomeAutomation/login \
+TouchGFX/build/MINGW32_NT-6.2/generated/images/src/Settings \
 TouchGFX/build/MINGW32_NT-6.2/generated/images/src/__generated \
 TouchGFX/build/MINGW32_NT-6.2/generated/simulator/src \
 TouchGFX/build/MINGW32_NT-6.2/generated/simulator/src/video \
@@ -53,6 +62,7 @@ TouchGFX/build/MINGW32_NT-6.2/gui/src/common \
 TouchGFX/build/MINGW32_NT-6.2/gui/src/model \
 TouchGFX/build/MINGW32_NT-6.2/gui/src/screen1_screen \
 TouchGFX/build/MINGW32_NT-6.2/gui/src/screen2_screen \
+TouchGFX/build/MINGW32_NT-6.2/gui/src/screen_screen \
 TouchGFX/build/MINGW32_NT-6.2/simulator \
 TouchGFX/build/MINGW32_NT-6.2/touchgfx/framework/source/platform/driver/touch \
 TouchGFX/build/MINGW32_NT-6.2/touchgfx/framework/source/platform/hal/simulator/sdl2 \

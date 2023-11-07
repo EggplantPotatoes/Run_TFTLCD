@@ -6,18 +6,26 @@
 
 #include <gui/common/FrontendApplication.hpp>
 #include <mvp/View.hpp>
-#include <gui/screen1_screen/screen1Presenter.hpp>
+#include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/Button.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
 
-class screen1ViewBase : public touchgfx::View<screen1Presenter>
+class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
 public:
-    screen1ViewBase();
-    virtual ~screen1ViewBase();
+    Screen1ViewBase();
+    virtual ~Screen1ViewBase();
     virtual void setupScreen();
+
+    /*
+     * Custom Actions
+     */
+    virtual void action1()
+    {
+        // Override and implement this function in Screen1
+    }
+    
 
 protected:
     FrontendApplication& application() {
@@ -30,14 +38,13 @@ protected:
     touchgfx::Box __background;
     touchgfx::Image image1;
     touchgfx::Button button1;
-    touchgfx::TextArea textArea1;
 
 private:
 
     /*
      * Callback Declarations
      */
-    touchgfx::Callback<screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
+    touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
 
     /*
      * Callback Handler Declarations

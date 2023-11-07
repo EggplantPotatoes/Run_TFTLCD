@@ -5,16 +5,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../TouchGFX/gui/src/screen1_screen/screen1Presenter.cpp \
-../TouchGFX/gui/src/screen1_screen/screen1View.cpp 
+../TouchGFX/gui/src/screen1_screen/Screen1Presenter.cpp \
+../TouchGFX/gui/src/screen1_screen/Screen1View.cpp 
 
 OBJS += \
-./TouchGFX/gui/src/screen1_screen/screen1Presenter.o \
-./TouchGFX/gui/src/screen1_screen/screen1View.o 
+./TouchGFX/gui/src/screen1_screen/Screen1Presenter.o \
+./TouchGFX/gui/src/screen1_screen/Screen1View.o 
 
 CPP_DEPS += \
-./TouchGFX/gui/src/screen1_screen/screen1Presenter.d \
-./TouchGFX/gui/src/screen1_screen/screen1View.d 
+./TouchGFX/gui/src/screen1_screen/Screen1Presenter.d \
+./TouchGFX/gui/src/screen1_screen/Screen1View.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +24,7 @@ TouchGFX/gui/src/screen1_screen/%.o TouchGFX/gui/src/screen1_screen/%.su TouchGF
 clean: clean-TouchGFX-2f-gui-2f-src-2f-screen1_screen
 
 clean-TouchGFX-2f-gui-2f-src-2f-screen1_screen:
-	-$(RM) ./TouchGFX/gui/src/screen1_screen/screen1Presenter.cyclo ./TouchGFX/gui/src/screen1_screen/screen1Presenter.d ./TouchGFX/gui/src/screen1_screen/screen1Presenter.o ./TouchGFX/gui/src/screen1_screen/screen1Presenter.su ./TouchGFX/gui/src/screen1_screen/screen1View.cyclo ./TouchGFX/gui/src/screen1_screen/screen1View.d ./TouchGFX/gui/src/screen1_screen/screen1View.o ./TouchGFX/gui/src/screen1_screen/screen1View.su
+	-$(RM) ./TouchGFX/gui/src/screen1_screen/Screen1Presenter.cyclo ./TouchGFX/gui/src/screen1_screen/Screen1Presenter.d ./TouchGFX/gui/src/screen1_screen/Screen1Presenter.o ./TouchGFX/gui/src/screen1_screen/Screen1Presenter.su ./TouchGFX/gui/src/screen1_screen/Screen1View.cyclo ./TouchGFX/gui/src/screen1_screen/Screen1View.d ./TouchGFX/gui/src/screen1_screen/Screen1View.o ./TouchGFX/gui/src/screen1_screen/Screen1View.su
 
 .PHONY: clean-TouchGFX-2f-gui-2f-src-2f-screen1_screen
 

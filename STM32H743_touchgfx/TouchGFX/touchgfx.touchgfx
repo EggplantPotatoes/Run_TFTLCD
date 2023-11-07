@@ -2,8 +2,15 @@
   "Application": {
     "Screens": [
       {
-        "Name": "screen1",
+        "Name": "Screen1",
         "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 1024,
+            "Height": 600,
+            "RelativeFilename": "HomeKONCEPT-NH-707-L-zdjecie-3.png"
+          },
           {
             "Type": "Button",
             "Name": "button1",
@@ -14,22 +21,6 @@
             "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_pressed.png",
             "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_active.png",
             "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_active.json"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 375,
-            "Y": 137,
-            "Width": 262,
-            "Height": 41,
-            "TextId": "demo",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 252,
-              "Blue": 252
-            },
-            "AutoSize": true
           }
         ],
         "Interactions": [
@@ -54,32 +45,154 @@
       },
       {
         "Name": "Screen2",
+        "CanvasBufferSize": 15360,
         "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 1024,
+            "Height": 600,
+            "RelativeFilename": "__generated\\light_theme_images_backgrounds_1024x600_shattered_rain.png"
+          },
           {
             "Type": "Button",
             "Name": "button1",
-            "X": 457,
-            "Y": 422,
+            "X": 914,
+            "Y": 550,
             "Width": 110,
             "Height": 50,
             "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_disabled.png",
             "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png"
           },
           {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 381,
-            "Y": 190,
-            "Width": 262,
-            "Height": 41,
-            "TextId": "ResourceId1",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 250,
-              "Green": 245,
-              "Blue": 245
+            "Type": "Gauge",
+            "Name": "gauge1",
+            "X": 122,
+            "Y": 25,
+            "Width": 240,
+            "Height": 240,
+            "Preset": "alternate_theme\\presets\\gauges\\medium\\active.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_gauge_medium_backgrounds_active.png",
+            "RotationCenterX": 120.0,
+            "RotationCenterY": 120.0,
+            "StartAngle": -113.0,
+            "EndAngle": 112.0,
+            "RangeMax": 100.0,
+            "InitialValue": 50.0,
+            "Easing": "Linear",
+            "EasingOption": "In",
+            "FileNameNeedle": "__generated\\alternate_theme_images_widgets_gauge_medium_needles_smooth.png",
+            "NeedleRotationCenterX": 7.0,
+            "NeedleRotationCenterY": 67.0,
+            "NeedleMovingRenderingAlgorithm": "Bilinear Interpolation",
+            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
+            "FileNameArc": "__generated\\alternate_theme_images_widgets_gauge_medium_fillers_swoop.png",
+            "ArcColor": {
+              "Red": 20,
+              "Green": 151,
+              "Blue": 197
             },
-            "AutoSize": true
+            "SetArcPosition": true,
+            "ArcX": 23.0,
+            "ArcY": 23.0,
+            "ArcWidth": 192.0,
+            "ArcHeight": 142.0,
+            "ArcRadius": 100.0,
+            "ArcLineWidth": 99.0,
+            "ArcCapStyle": "Butt"
+          },
+          {
+            "Type": "Gauge",
+            "Name": "gauge2",
+            "X": 665,
+            "Y": 25,
+            "Width": 240,
+            "Height": 240,
+            "Preset": "alternate_theme\\presets\\gauges\\medium\\active.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_gauge_medium_backgrounds_active.png",
+            "RotationCenterX": 120.0,
+            "RotationCenterY": 120.0,
+            "StartAngle": -113.0,
+            "EndAngle": 112.0,
+            "RangeMax": 100.0,
+            "InitialValue": 50.0,
+            "Easing": "Linear",
+            "EasingOption": "In",
+            "FileNameNeedle": "__generated\\alternate_theme_images_widgets_gauge_medium_needles_smooth.png",
+            "NeedleRotationCenterX": 7.0,
+            "NeedleRotationCenterY": 67.0,
+            "NeedleMovingRenderingAlgorithm": "Bilinear Interpolation",
+            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
+            "ArcColor": {
+              "Red": 20,
+              "Green": 151,
+              "Blue": 197
+            },
+            "ArcCapStyle": "Butt"
+          },
+          {
+            "Type": "Slider",
+            "Name": "slider1",
+            "X": 669,
+            "Y": 449,
+            "Width": 232,
+            "Height": 32,
+            "IsHorizontalSlider": true,
+            "BackgroundUnselected": "__generated\\alternate_theme_images_widgets_slider_horizontal_thick_track_small.png",
+            "BackgroundSelected": "__generated\\alternate_theme_images_widgets_slider_horizontal_thick_filler_small.png",
+            "Indicator": "__generated\\alternate_theme_images_widgets_slider_horizontal_thick_rounded_active.png",
+            "BackgroundX": 16,
+            "BackgroundY": 11,
+            "IndicatorMax": 200,
+            "ValueMax": 100
+          },
+          {
+            "Type": "TextProgress",
+            "Name": "textProgress1",
+            "X": 698,
+            "Y": 339,
+            "Width": 175,
+            "Height": 50,
+            "TextId": "__SingleUse_QG8U",
+            "Color": {
+              "Red": 12,
+              "Green": 27,
+              "Blue": 55
+            },
+            "Preset": "alternate_theme\\presets\\textprogress\\rounded.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_textprogress_backgrounds_rounded_light.png",
+            "IndicatorPositionX": 12,
+            "IndicatorPositionY": 10,
+            "IndicatorPositionWidth": 150,
+            "IndicatorPositionHeight": 30,
+            "ProgressRangeMax": 100
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "dynamicGraph1",
+            "X": 76,
+            "Y": 282,
+            "Width": 358,
+            "Height": 293,
+            "DataSeed": -76554570,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "AreaDrawer",
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                }
+              }
+            ]
           }
         ],
         "Interactions": [
@@ -92,7 +205,18 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "screen1"
+              "ActionComponent": "Screen1"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerSliderValueChanged",
+              "TriggerComponent": "slider1"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "textProgress1.setValue(value);"
             }
           }
         ]
@@ -105,7 +229,7 @@
       "Height": 600
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "screen1",
+    "StartupScreenName": "Screen1",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",
@@ -146,7 +270,7 @@
     "SubFamily": "STM32H743/753",
     "Toolchain": "STM32CubeIDE",
     "Platform": "m7",
-    "ProjectFile": "../touchgfx.ioc",
+    "ProjectFile": "../touchgfx_config.ioc",
     "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
     "OptionalComponents": [],
     "AdditionalFeatures": []

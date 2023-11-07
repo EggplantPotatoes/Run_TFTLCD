@@ -368,7 +368,15 @@ void W25QXX_MemoryMapped(void)
 
 void w25qxx_flash_init(void)
 {
+//	uint8_t test_BUFFER[4096] = {0};
+//
+//	for(int i=0;i<4096;i++)
+//	{
+//		test_BUFFER[i] = i;
+//	}
 	W25QXX_Init();
+//	W25QXX_Write(test_BUFFER,0,4096);
+
 	W25QXX_MemoryMapped();  //开启外部QSPI Flash 内存映射模式
 
 }

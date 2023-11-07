@@ -1,4 +1,6 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:78:5:touchgfx::colortype::colortype()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:91:5:touchgfx::colortype::colortype(uint32_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:114:5:touchgfx::colortype::operator uint32_t() const	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:127:5:touchgfx::Rect::Rect()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:140:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Bitmap.hpp:132:5:touchgfx::Bitmap::Bitmap(touchgfx::BitmapId)	1
@@ -8,6 +10,8 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:303:13:int16_t touchgfx::Drawable::getHeight() const	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	1
@@ -25,6 +29,10 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:625:10:void touchgfx::Drawable::resetDrawChainCache()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:110:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:268:17:static touchgfx::LCD& touchgfx::HAL::lcd()	3
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:1101:10:touchgfx::LCD* touchgfx::HAL::getAuxiliaryLCD()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:46:13:touchgfx::Screen::~Screen()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:46:13:virtual touchgfx::Screen::~Screen()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:93:18:virtual void touchgfx::Screen::setupScreen()	1
@@ -40,40 +48,181 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:33:5:touchgfx::Box::Box()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:62:10:void touchgfx::Box::setColor(touchgfx::colortype)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:59:5:touchgfx::TypedText::TypedText(touchgfx::TypedTextId)	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:43:5:touchgfx::TextArea::TextArea()	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:429:9:touchgfx::TextArea::BoundingArea::BoundingArea()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:36:5:touchgfx::AbstractButton::AbstractButton()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:63:10:void touchgfx::AbstractButton::setAction(touchgfx::GenericCallback<const touchgfx::AbstractButton&>&)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:32:7:touchgfx::AbstractButton::~AbstractButton()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:32:7:virtual touchgfx::AbstractButton::~AbstractButton()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:34:5:touchgfx::Button::Button()	1
-../TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:23:26:FrontendApplication& Screen2ViewBase::application()	1
-../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<Screen2Presenter>::~View()	1
-../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<Screen2Presenter>::~View()	1
-../TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:9:1:Screen2ViewBase::Screen2ViewBase()	1
-../TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:32:1:Screen2ViewBase::~Screen2ViewBase()	1
-../TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:32:1:virtual Screen2ViewBase::~Screen2ViewBase()	1
-../TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:37:6:virtual void Screen2ViewBase::setupScreen()	1
-../TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:42:6:void Screen2ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	2
-../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:39:5:touchgfx::View<T>::View() [with T = Screen2Presenter]	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:134:7:constexpr touchgfx::GenericCallback<const touchgfx::AbstractButton&>::GenericCallback()	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:373:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = Screen2ViewBase; T1 = const touchgfx::AbstractButton&]	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:138:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = const touchgfx::AbstractButton&]	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:138:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = const touchgfx::AbstractButton&]	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<Screen2ViewBase, const touchgfx::AbstractButton&>::~Callback()	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<Screen2ViewBase, const touchgfx::AbstractButton&>::~Callback()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:44:5:touchgfx::AbstractPainter::AbstractPainter()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:50:13:touchgfx::AbstractPainter::~AbstractPainter()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:50:13:virtual touchgfx::AbstractPainter::~AbstractPainter()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:61:34:virtual touchgfx::HAL::RenderingMethod touchgfx::AbstractPainter::getRenderingMethod() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:78:18:virtual bool touchgfx::AbstractPainter::setup(const touchgfx::Rect&) const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:90:18:virtual void touchgfx::AbstractPainter::tearDown() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:70:18:touchgfx::CWRUtil::Q5::Q5(int)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:93:9:touchgfx::CWRUtil::Q5::operator int() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:115:12:touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::Q5::operator+(const touchgfx::CWRUtil::Q5&) const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:140:12:touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::Q5::operator-(const touchgfx::CWRUtil::Q5&) const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:813:15:static touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::muldivQ5(touchgfx::CWRUtil::Q5, touchgfx::CWRUtil::Q5, touchgfx::CWRUtil::Q5)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:828:15:static touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::muldiv_toQ5(int32_t, int32_t, int32_t)	2
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:48:10:void touchgfx::CanvasWidget::setPainter(const touchgfx::AbstractPainter&)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:66:18:virtual void touchgfx::CanvasWidget::setAlpha(uint8_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:72:21:virtual uint8_t touchgfx::CanvasWidget::getAlpha() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:118:18:virtual touchgfx::Rect touchgfx::CanvasWidget::getMinimalRect() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:134:18:virtual touchgfx::Rect touchgfx::CanvasWidget::getSolidRect() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Slider.hpp:112:10:void touchgfx::Slider::setNewValueCallback(touchgfx::GenericCallback<const touchgfx::Slider&, int>&)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:59:5:touchgfx::TypedText::TypedText(touchgfx::TypedTextId)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:48:18:virtual void touchgfx::TextArea::setWidth(int16_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:54:18:virtual void touchgfx::TextArea::setHeight(int16_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:60:18:virtual touchgfx::Rect touchgfx::TextArea::getSolidRect() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:89:18:virtual void touchgfx::TextArea::setAlpha(uint8_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:111:18:virtual void touchgfx::TextArea::setBaselineY(int16_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:127:18:virtual void touchgfx::TextArea::setXBaselineY(int16_t, int16_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:246:22:const touchgfx::TypedText& touchgfx::TextArea::getTypedText() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:403:41:virtual const UnicodeChar* touchgfx::TextArea::getWildcard2() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:429:9:touchgfx::TextArea::BoundingArea::BoundingArea()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:40:7:touchgfx::TextArea::~TextArea()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:40:7:virtual touchgfx::TextArea::~TextArea()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:43:18:virtual void touchgfx::TextAreaWithWildcardBase::invalidateContent() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:49:36:virtual touchgfx::TextArea::BoundingArea touchgfx::TextAreaWithWildcardBase::calculateBoundingArea() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:33:7:touchgfx::TextAreaWithWildcardBase::~TextAreaWithWildcardBase()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:33:7:virtual touchgfx::TextAreaWithWildcardBase::~TextAreaWithWildcardBase()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:84:41:virtual const UnicodeChar* touchgfx::TextAreaWithOneWildcard::getWildcard1() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:127:17:virtual int touchgfx::AbstractDataGraph::getScaleX() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:162:17:virtual int touchgfx::AbstractDataGraph::getScaleY() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:172:18:virtual void touchgfx::AbstractDataGraph::setAlpha(uint8_t)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:440:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeX(int, int)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:446:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeX(float, float)	3
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:478:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeXAuto(bool, int)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:484:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeXAuto(bool, float)	2
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:507:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeY(int, int)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:515:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeY(float, float)	3
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:543:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeYAuto(bool, int)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:549:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeYAuto(bool, float)	2
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:559:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeXMinAsInt() const	4
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:569:19:virtual float touchgfx::AbstractDataGraph::getGraphRangeXMinAsFloat() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:583:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeXMinScaled() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:593:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeXMaxAsInt() const	4
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:603:19:virtual float touchgfx::AbstractDataGraph::getGraphRangeXMaxAsFloat() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:617:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeXMaxScaled() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:627:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMinAsInt() const	4
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:637:19:virtual float touchgfx::AbstractDataGraph::getGraphRangeYMinAsFloat() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:649:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMinScaled() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:659:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMaxAsInt() const	4
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:669:19:virtual float touchgfx::AbstractDataGraph::getGraphRangeYMaxAsFloat() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:681:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMaxScaled() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1176:18:virtual void touchgfx::AbstractDataGraph::invalidateContent() const	2
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1270:25:virtual touchgfx::CWRUtil::Q5 touchgfx::AbstractDataGraph::valueToScreenXQ5(int) const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1282:25:virtual touchgfx::CWRUtil::Q5 touchgfx::AbstractDataGraph::valueToScreenYQ5(int) const	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:40:7:touchgfx::Container::~Container()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:40:7:virtual touchgfx::Container::~Container()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:37:7:touchgfx::AbstractDataGraph::~AbstractDataGraph()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:37:7:virtual touchgfx::AbstractDataGraph::~AbstractDataGraph()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1338:5:touchgfx::DynamicDataGraph::DynamicDataGraph(int16_t, int*)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1360:18:virtual void touchgfx::DynamicDataGraph::setScale(int, bool)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1373:17:virtual int touchgfx::DynamicDataGraph::getScale() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1411:17:virtual int touchgfx::DynamicDataGraph::getGraphRangeXMin() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1421:17:virtual int touchgfx::DynamicDataGraph::getGraphRangeXMax() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1428:18:virtual void touchgfx::DynamicDataGraph::setGraphRangeXAutoScaled(bool, int)	7
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1434:5:virtual void touchgfx::DynamicDataGraph::setXAxisScale(int)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1447:18:virtual void touchgfx::DynamicDataGraph::setXAxisFactor(int)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1453:5:virtual void touchgfx::DynamicDataGraph::setXAxisScale(float)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1461:18:virtual void touchgfx::DynamicDataGraph::setXAxisFactor(float)	2
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1474:18:virtual void touchgfx::DynamicDataGraph::setXAxisFactorScaled(int)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1480:5:virtual int touchgfx::DynamicDataGraph::getXAxisScaleAsInt() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1493:17:virtual int touchgfx::DynamicDataGraph::getXAxisFactorAsInt() const	4
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1499:5:virtual float touchgfx::DynamicDataGraph::getXAxisScaleAsFloat() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1507:19:virtual float touchgfx::DynamicDataGraph::getXAxisFactorAsFloat() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1519:17:virtual int touchgfx::DynamicDataGraph::getXAxisFactorScaled() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1530:18:virtual void touchgfx::DynamicDataGraph::setXAxisOffset(int)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1536:18:virtual void touchgfx::DynamicDataGraph::setXAxisOffset(float)	2
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1551:18:virtual void touchgfx::DynamicDataGraph::setXAxisOffsetScaled(int)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1562:17:virtual int touchgfx::DynamicDataGraph::getXAxisOffsetAsInt() const	4
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1568:19:virtual float touchgfx::DynamicDataGraph::getXAxisOffsetAsFloat() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1580:17:virtual int touchgfx::DynamicDataGraph::getXAxisOffsetScaled() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1585:17:virtual int touchgfx::DynamicDataGraph::indexToDataPointXScaled(int16_t) const	2
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1591:17:virtual int touchgfx::DynamicDataGraph::indexToDataPointYScaled(int16_t) const	2
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1630:21:virtual int16_t touchgfx::DynamicDataGraph::dataIndex(int16_t) const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1648:17:virtual int touchgfx::DynamicDataGraph::indexToXAxis(int, int) const	4
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1658:17:virtual int touchgfx::DynamicDataGraph::getScaleX() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1665:17:virtual int touchgfx::DynamicDataGraph::getScaleY() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1671:5:virtual void touchgfx::DynamicDataGraph::setXAxisScaleScaled(int)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1679:5:virtual int touchgfx::DynamicDataGraph::getXAxisScaleScaled() const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1686:25:virtual touchgfx::CWRUtil::Q5 touchgfx::DynamicDataGraph::indexToScreenXQ5(int16_t) const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1691:25:virtual touchgfx::CWRUtil::Q5 touchgfx::DynamicDataGraph::indexToScreenYQ5(int16_t) const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1329:7:touchgfx::DynamicDataGraph::~DynamicDataGraph()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1329:7:virtual touchgfx::DynamicDataGraph::~DynamicDataGraph()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:40:5:touchgfx::GraphWrapAndClearData::GraphWrapAndClearData(int16_t, int*)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:47:21:virtual int32_t touchgfx::GraphWrapAndClearData::indexToGlobalIndex(int16_t) const	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:33:7:touchgfx::CanvasWidget::~CanvasWidget()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:33:7:virtual touchgfx::CanvasWidget::~CanvasWidget()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:37:5:touchgfx::AbstractGraphElement::AbstractGraphElement()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:33:7:touchgfx::AbstractGraphElement::~AbstractGraphElement()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:33:7:virtual touchgfx::AbstractGraphElement::~AbstractGraphElement()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:682:5:touchgfx::GraphElementArea::GraphElementArea()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp:43:5:touchgfx::AbstractPainterColor::AbstractPainterColor(touchgfx::colortype)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp:49:13:touchgfx::AbstractPainterColor::~AbstractPainterColor()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp:49:13:virtual touchgfx::AbstractPainterColor::~AbstractPainterColor()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp:58:18:virtual void touchgfx::AbstractPainterColor::setColor(touchgfx::colortype)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:41:5:touchgfx::AbstractPainterRGB565::AbstractPainterRGB565()	2
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:34:7:touchgfx::AbstractPainterRGB565::~AbstractPainterRGB565()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:34:7:virtual touchgfx::AbstractPainterRGB565::~AbstractPainterRGB565()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:42:5:touchgfx::PainterRGB565::PainterRGB565(touchgfx::colortype)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:47:18:virtual void touchgfx::PainterRGB565::setColor(touchgfx::colortype)	1
+../TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:28:26:FrontendApplication& Screen2ViewBase::application()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<Screen2Presenter>::~View()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<Screen2Presenter>::~View()	1
+../TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:10:1:Screen2ViewBase::Screen2ViewBase()	101
+../TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:182:1:Screen2ViewBase::~Screen2ViewBase()	1
+../TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:182:1:virtual Screen2ViewBase::~Screen2ViewBase()	1
+../TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:187:6:virtual void Screen2ViewBase::setupScreen()	1
+../TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:192:6:void Screen2ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	2
+../TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:203:6:void Screen2ViewBase::sliderValueChangedCallbackHandler(const touchgfx::Slider&, int)	2
+../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:39:5:touchgfx::View<T>::View() [with T = Screen2Presenter]	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:31:7:touchgfx::GraphWrapAndClearData::~GraphWrapAndClearData()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:31:7:virtual touchgfx::GraphWrapAndClearData::~GraphWrapAndClearData()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:69:5:touchgfx::GraphWrapAndClear<CAPACITY>::GraphWrapAndClear() [with short int CAPACITY = 100]	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:134:7:constexpr touchgfx::GenericCallback<const touchgfx::AbstractButton&>::GenericCallback()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:373:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = Screen2ViewBase; T1 = const touchgfx::AbstractButton&]	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:90:7:constexpr touchgfx::GenericCallback<const touchgfx::Slider&, int>::GenericCallback()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:306:5:touchgfx::Callback<dest_type, T1, T2, void>::Callback(dest_type*, void (dest_type::*)(T1, T2)) [with dest_type = Screen2ViewBase; T1 = const touchgfx::Slider&; T2 = int]	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:138:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = const touchgfx::AbstractButton&]	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:138:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = const touchgfx::AbstractButton&]	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:94:13:touchgfx::GenericCallback<T1, T2, void>::~GenericCallback() [with T1 = const touchgfx::Slider&; T2 = int]	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:94:13:touchgfx::GenericCallback<T1, T2, void>::~GenericCallback() [with T1 = const touchgfx::Slider&; T2 = int]	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:290:8:touchgfx::Callback<Screen2ViewBase, const touchgfx::Slider&, int>::~Callback()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:290:8:virtual touchgfx::Callback<Screen2ViewBase, const touchgfx::Slider&, int>::~Callback()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<Screen2ViewBase, const touchgfx::AbstractButton&>::~Callback()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<Screen2ViewBase, const touchgfx::AbstractButton&>::~Callback()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:66:7:touchgfx::GraphWrapAndClear<100>::~GraphWrapAndClear()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:66:7:virtual touchgfx::GraphWrapAndClear<100>::~GraphWrapAndClear()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:62:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:62:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:29:7:touchgfx::Box::~Box()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:29:7:virtual touchgfx::Box::~Box()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:38:7:touchgfx::Image::~Image()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:38:7:virtual touchgfx::Image::~Image()	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:40:7:touchgfx::TextArea::~TextArea()	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:40:7:virtual touchgfx::TextArea::~TextArea()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:31:7:touchgfx::Button::~Button()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:31:7:virtual touchgfx::Button::~Button()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:37:7:touchgfx::AbstractProgressIndicator::~AbstractProgressIndicator()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:37:7:virtual touchgfx::AbstractProgressIndicator::~AbstractProgressIndicator()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp:46:7:touchgfx::TextureMapper::~TextureMapper()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp:46:7:virtual touchgfx::TextureMapper::~TextureMapper()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:48:7:touchgfx::Circle::~Circle()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:48:7:virtual touchgfx::Circle::~Circle()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp:35:7:touchgfx::Gauge::~Gauge()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp:35:7:virtual touchgfx::Gauge::~Gauge()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Slider.hpp:40:7:touchgfx::Slider::~Slider()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Slider.hpp:40:7:virtual touchgfx::Slider::~Slider()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/TextProgress.hpp:34:7:touchgfx::TextProgress::~TextProgress()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/TextProgress.hpp:34:7:virtual touchgfx::TextProgress::~TextProgress()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:679:7:touchgfx::GraphElementArea::~GraphElementArea()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:679:7:virtual touchgfx::GraphElementArea::~GraphElementArea()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:34:7:touchgfx::PainterRGB565::~PainterRGB565()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:34:7:virtual touchgfx::PainterRGB565::~PainterRGB565()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:318:18:void touchgfx::Callback<dest_type, T1, T2, void>::execute(T1, T2) [with dest_type = Screen2ViewBase; T1 = const touchgfx::Slider&; T2 = int]	2
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:328:18:bool touchgfx::Callback<dest_type, T1, T2, void>::isValid() const [with dest_type = Screen2ViewBase; T1 = const touchgfx::Slider&; T2 = int]	5
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = Screen2ViewBase; T1 = const touchgfx::AbstractButton&]	2
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = Screen2ViewBase; T1 = const touchgfx::AbstractButton&]	5

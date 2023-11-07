@@ -6,8 +6,8 @@
 ../TouchGFX/gui/include/gui/model/ModelListener.hpp:9:5:ModelListener::ModelListener()	16	static
 ../TouchGFX/gui/include/gui/model/ModelListener.hpp:11:13:ModelListener::~ModelListener()	16	static
 ../TouchGFX/gui/include/gui/model/ModelListener.hpp:11:13:virtual ModelListener::~ModelListener()	16	static
-../TouchGFX/gui/include/gui/screen1_screen/screen1Presenter.hpp:28:13:screen1Presenter::~screen1Presenter()	16	static
-../TouchGFX/gui/include/gui/screen1_screen/screen1Presenter.hpp:28:13:virtual screen1Presenter::~screen1Presenter()	16	static
-../TouchGFX/gui/src/screen1_screen/screen1Presenter.cpp:4:1:screen1Presenter::screen1Presenter(screen1View&)	16	static
-../TouchGFX/gui/src/screen1_screen/screen1Presenter.cpp:10:6:virtual void screen1Presenter::activate()	16	static
-../TouchGFX/gui/src/screen1_screen/screen1Presenter.cpp:15:6:virtual void screen1Presenter::deactivate()	16	static
+../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp:28:13:Screen1Presenter::~Screen1Presenter()	16	static
+../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp:28:13:virtual Screen1Presenter::~Screen1Presenter()	16	static
+../TouchGFX/gui/src/screen1_screen/Screen1Presenter.cpp:4:1:Screen1Presenter::Screen1Presenter(Screen1View&)	16	static
+../TouchGFX/gui/src/screen1_screen/Screen1Presenter.cpp:10:6:virtual void Screen1Presenter::activate()	16	static
+../TouchGFX/gui/src/screen1_screen/Screen1Presenter.cpp:15:6:virtual void Screen1Presenter::deactivate()	16	static
